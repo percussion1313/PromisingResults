@@ -6,10 +6,13 @@ console.log('test');
     console.log(result);
 }).then(slowMath.multiply)*/
 
-slowMath.add(1, 1)
+slowMath.add(6,2)
     .then((result) => {
     console.log(result);
 slowMath.multiply(result, 2)
+    .then((result) => {
+    console.log(result);
+slowMath.divide(result, 4)
     .then((result) => {
     console.log(result);
 slowMath.subtract(result, 3)
@@ -34,6 +37,7 @@ slowMath.add(result, 32)
     console.log(`The final result is ${result}`)}, 1000)
 }).catch((err) => {
     console.log(err)
+})
                             })
                         })
                     })
